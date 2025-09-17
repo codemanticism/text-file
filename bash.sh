@@ -172,3 +172,6 @@ Terminal=false" >> ~/Desktop/Word.desktop
 cp -a ~/Desktop ~/.backup
 chmod -R u-w ~/.backup
 
+systemctl disable firstboot.service
+rm -f /etc/systemd/system/firstboot.service
+rm -f /usr/local/bin/firstboot.sh
